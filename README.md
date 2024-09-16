@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
   <img src="./images and videos/Cover.png" alt="Cover"/>
 </p>
@@ -167,3 +168,7 @@ web3.eth.getAccounts().then(console.log);
 
 -So in order to enhance the hospital's digital health system, we propose a "Decentralized Medical data sharing & storage application based on blockchain."
 
+=======
+# MediBlock
+It is an Ethereum blockchain based database management system for hospital record management.
+>>>>>>> 1e15830747404fadd25ced9fed3ec6b198ea928a

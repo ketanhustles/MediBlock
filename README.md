@@ -1,174 +1,75 @@
-<<<<<<< HEAD
-<p align="center">
-  <img src="./images and videos/Cover.png" alt="Cover"/>
-</p>
-
-# Hospital_Management_System_Dapp
-
-It is an Ethereum blockchain based database management system for hospital record management.
-
-# Screenshots of working
-&nbsp; 
-
-The below image is a compilation of images which show the successful deployment and working of the project done through REMIX IDE and the Project is run through NodeJS and Lite-Server on Local System
-
-
-<p align="center">
-  <img src="./images and videos/Project.gif" alt="Image"/>
-</p>
-
-&nbsp;
-
-# Deployment and Running Instructions
-
-&nbsp;
-
-Requirements- Metamask,Nodejs,lite-server,Web3js
-
-### MetaMask Browser Extension
-
-You can download the metamask extension to run the application for transactions.
-
-You can find the latest version of MetaMask on [their official website](https://metamask.io/). For help using MetaMask, visit their [User Support Site](https://metamask.zendesk.com/hc/en-us).
-
-For [general questions](https://community.metamask.io/c/learn/26), [feature requests](https://community.metamask.io/c/feature-requests-ideas/13), or [developer questions](https://community.metamask.io/c/developer-questions/11), visit their [Community Forum](https://community.metamask.io/).
-
-MetaMask supports Firefox, Google Chrome, and Chromium-based browsers. We recommend using the latest available browser version.
-
-For up to the minute news, follow their [Twitter](https://twitter.com/metamask) or [Medium](https://medium.com/metamask) pages.
-
-To learn how to develop MetaMask-compatible applications, visit their [Developer Docs](https://metamask.github.io/metamask-docs/).
-
-To learn how to contribute to the MetaMask project itself, visit their [Internal Docs](https://github.com/MetaMask/metamask-extension/tree/develop/docs).
-
-&nbsp;
-
-
-&nbsp;
-
-### Remix IDE
-
-
-Please Refer the official documentation or the GITHUB Repository to install and run REMIX IDE for deploying Smart contracts
-
-[Official Website](https://remix-ide.readthedocs.io/en/latest/run.html)
-[Github](https://github.com/ethereum/remix-project)
-
-&nbsp;
-
-&nbsp;
-
-### Install Nodejs and Web3
-
-Please read the [documentation][docs] for more.
-
-#### Installation
-
-You can install the package either using [NPM](https://www.npmjs.com/package/web3) or using [Yarn](https://yarnpkg.com/package/web3)
-
-#### Using NPM
-
-```bash
-npm install web3
-```
-
-#### Yarn
-
-```bash
-yarn add web3
-```
-
-#### In the Browser
-
-Use the prebuilt `dist/web3.min.js`, or
-build using the [web3.js][repo] repository:
-
-```bash
-npm run build
-```
-
-Then include `dist/web3.min.js` in your html file.
-This will expose `Web3` on the window object.
-
-Or via jsDelivr CDN:
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-```
-
-UNPKG:
-
-```html
-<script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
-```
-
-#### Usage
-
-```js
-// In Node.js
-const Web3 = require('web3');
-const web3 = new Web3('ws://localhost:8546');
-console.log(web3);
-// Output
-{
-    eth: ... ,
-    shh: ... ,
-    utils: ...,
-    ...
-}
-```
-
-Additionally you can set a provider using `web3.setProvider()` (e.g. WebsocketProvider):
-
-```js
-web3.setProvider('ws://localhost:8546');
-// or
-web3.setProvider(new Web3.providers.WebsocketProvider('ws://localhost:8546'));
-```
-
-There you go, now you can use it:
-
-```js
-web3.eth.getAccounts().then(console.log);
-```
-
-
-&nbsp;
-
-&nbsp;
-
-#### If you face any other Problem vist official Docs or refer various blogs to run blockchain apps on PC
-
-### After this Deploy the contracts on Remix ide, Install lite-server and start a new server using lite-server and run the application
-
-## The problem DECENTRALIZED PERSONAL HEALTH RECORD APPLICATION solves
-
-&nbsp;
-
-
--Currently, the hospitals use traditional methods to store critical medical data of the patients and that data is indirectly subject to various attacks and thefts.
-
--In digital health records in centralized system, data sharing and privacy preservation are big challenges since medical data is sensitive.
-
--To design a decentralized application that is secure , private and where doctors are given a dependable way to maintain patient privacy while storing information about medical history.
-
--To design a system which is more patient centric so, if patient wishes only then their health records will be shared with the doctors.
-
--To develop a system that stores and displays the patients medical data to save time during emergency situations.
-
--Provide secure storage for patient information: The decentralized nature of blockchain technology would ensure that patient data is stored in a secure and tamper-proof manner, protecting it from unauthorized access or breaches.
-
--Facilitate data sharing: The system would allow authorized healthcare providers and researchers to access and share patient data in accordance with patient consent and data privacy regulations.
-
--Improve data interoperability: The system would enable the sharing of patient data between different healthcare organizations and systems, which would improve the continuity of care and medical research.
-
--Automate healthcare-related processes: Smart contracts on the blockchain platform could automate various processes such as claims processing, medical research and medical billing.
-
--Enable patient control over their data: Patients would have the ability to control and manage access to their personal health information (PHI) through the use of digital identity and consent management tools.
-
--So in order to enhance the hospital's digital health system, we propose a "Decentralized Medical data sharing & storage application based on blockchain."
-
-=======
-# MediBlock
-It is an Ethereum blockchain based database management system for hospital record management.
->>>>>>> 1e15830747404fadd25ced9fed3ec6b198ea928a
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediBlock</title>
+</head>
+<body>
+
+  <h1>MediBlock</h1>
+  <p>MediBlock is a decentralized platform designed to securely store and manage healthcare records using blockchain technology. The platform provides a transparent, secure, and immutable record-keeping system for healthcare data, empowering patients and healthcare providers to manage medical records with privacy and control.</p>
+
+  <h2>Features</h2>
+  <ul>
+    <li><strong>Decentralized Medical Records</strong>: Medical records are stored on the blockchain, ensuring transparency, security, and control for both patients and providers.</li>
+    <li><strong>Patient Control</strong>: Patients have full control over their medical data and can choose who has access to their records.</li>
+    <li><strong>Secure Data Storage</strong>: Blockchain's immutability ensures that healthcare records cannot be tampered with or altered.</li>
+    <li><strong>Healthcare Provider Integration</strong>: Healthcare providers can securely access and update patient records with proper authorization.</li>
+    <li><strong>Smart Contract-Based Permissions</strong>: Smart contracts automate permissions and access to medical data based on patient consent.</li>
+  </ul>
+
+  <h2>Tech Stack</h2>
+  <ul>
+    <li><strong>Blockchain</strong>: Ethereum, Binance Smart Chain (or any EVM-compatible network)</li>
+    <li><strong>Smart Contracts</strong>: Solidity</li>
+    <li><strong>Frontend</strong>: React.js</li>
+    <li><strong>Web3 Integration</strong>: Web3.js, Ethers.js</li>
+    <li><strong>Backend</strong>: Node.js (optional for certain features)</li>
+    <li><strong>Data Encryption</strong>: AES encryption for securing sensitive data before storing it on the blockchain.</li>
+    <li><strong>Styling</strong>: Material-UI, CSS</li>
+    <li><strong>Testing</strong>: Hardhat, Mocha</li>
+  </ul>
+
+  <h2>Installation</h2>
+  <h3>Prerequisites</h3>
+  <p>Ensure you have the following installed on your local machine:</p>
+  <ul>
+    <li>Node.js and npm</li>
+    <li>Truffle or Hardhat (for smart contract deployment)</li>
+    <li>MetaMask (or any Ethereum wallet) for interacting with the platform</li>
+  </ul>
+
+  <h3>1. Clone the Repository</h3>
+  <pre><code>git clone https://github.com/ketanhustles/MediBlock.git
+cd MediBlock</code></pre>
+
+  <h3>2. Install Dependencies</h3>
+  <pre><code>npm install</code></pre>
+
+  <h3>3. Compile Smart Contracts</h3>
+  <p>Using Hardhat (or Truffle):</p>
+  <pre><code>npx hardhat compile</code></pre>
+
+  <h3>4. Deploy Contracts</h3>
+  <p>You can deploy the smart contracts to a local or test Ethereum network:</p>
+  <pre><code>npx hardhat run scripts/deploy.js --network &lt;network-name&gt;</code></pre>
+  <p>Replace &lt;network-name&gt; with the desired network (e.g., ropsten, sepolia, localhost).</p>
+
+  <h3>5. Run the DApp</h3>
+  <p>To run the frontend locally:</p>
+  <pre><code>npm start</code></pre>
+  <p>Access the app at <a href="http://localhost:3000">http://localhost:3000</a>.</p>
+
+  <h2>Usage</h2>
+  <ol>
+    <li>Connect your Ethereum wallet (MetaMask or any compatible wallet) to the DApp.</li>
+    <li>Patients can upload their medical records securely to the blockchain.</li>
+    <li>Healthcare providers can view and update records with patient consent.</li>
+    <li>Patients can manage access permissions, granting or revoking access to their records.</li>
+  </ol>
+
+  <h2>Contributing</h2>
+  <ol>
+    <li>Fork the repository.</li>
+    <li>Create a feature branch 
